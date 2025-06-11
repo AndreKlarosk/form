@@ -121,48 +121,60 @@
              onerror="this.onerror=null;this.src='https://placehold.co/850x546/eee/ccc?text=Imagem+do+formulário+não+encontrada';">
 
         <!-- Campos de entrada posicionados sobre a imagem -->
-        <input type="text" style="left: 140px; top: 58px; width: 440px;"> <!-- Administração -->
-        <input type="date" style="left: 690px; top: 58px; width: 145px;"> <!-- Considerado na Data -->
-        
-        <input type="text" style="left: 172px; top: 120px; width: 662px;"> <!-- Apresentado para -->
-        <input type="text" style="left: 152px; top: 158px; width: 682px;"> <!-- Nome Completo -->
-        
-        <input type="text" style="left: 80px; top: 196px; width: 60px;"> <!-- Idade -->
-        
-        <!-- Estado Civil -->
-        <input type="checkbox" name="estado_civil" style="left: 145px; top: 236px;"> <!-- (S)olteiro -->
-        <input type="checkbox" name="estado_civil" style="left: 247px; top: 236px;"> <!-- (C)asado -->
-        <input type="checkbox" name="estado_civil" style="left: 335px; top: 236px;"> <!-- (D)ivorciado -->
-        <input type="checkbox" name="estado_civil" style="left: 460px; top: 236px;"> <!-- (V)iuvo -->
-        
-        <input type="text" style="left: 180px; top: 274px; width: 60px;"> <!-- Tempo de Batizado -->
-        
-        <!-- Aposentado por invalidez -->
-        <input type="checkbox" name="aposentado" style="left: 237px; top: 314px;"> <!-- Sim -->
-        <input type="checkbox" name="aposentado" style="left: 320px; top: 314px;"> <!-- Não -->
-        
-        <input type="text" style="left: 195px; top: 351px; width: 638px;"> <!-- Comum Congregação -->
-        <input type="text" style="left: 295px; top: 388px; width: 538px;"> <!-- Cargo que já exerce -->
-        
-        <!-- Cônjuge exerce algum cargo -->
-        <input type="checkbox" name="conjuge_cargo" style="left: 367px; top: 429px;"> <!-- Sim -->
-        <input type="checkbox" name="conjuge_cargo" style="left: 450px; top: 429px;"> <!-- Não -->
-        
-        <!-- Assinaturas -->
-        <div style="position: absolute; left: 130px; top: 465px;">
-            <canvas id="sigAnciao" class="signature-canvas" width="200" height="40"></canvas>
-            <button class="clear-button" style="top: -20px; left: 0;" data-canvas="sigAnciao">Limpar</button>
-        </div>
-        
-        <div style="position: absolute; left: 395px; top: 465px;">
-             <canvas id="sigDiacono" class="signature-canvas" width="200" height="40"></canvas>
-            <button class="clear-button" style="top: -20px; left: 0;" data-canvas="sigDiacono">Limpar</button>
-        </div>
-       
-        <div style="position: absolute; left: 640px; top: 465px;">
-             <canvas id="sigCooperador" class="signature-canvas" width="200" height="40"></canvas>
-            <button class="clear-button" style="top: -20px; left: 0;" data-canvas="sigCooperador">Limpar</button>
-        </div>
+        <!-- Administração -->
+<input type="text" style="left: 150px; top: 32px; width: 390px;">
+
+<!-- Considerado na Data -->
+<input type="date" style="left: 665px; top: 32px; width: 150px;">
+
+<!-- Apresentado para -->
+<input type="text" style="left: 175px; top: 88px; width: 660px;">
+
+<!-- Nome Completo -->
+<input type="text" style="left: 165px; top: 118px; width: 670px;">
+
+<!-- Idade -->
+<input type="text" style="left: 90px; top: 150px; width: 50px;">
+
+<!-- Tempo de Batizado -->
+<input type="text" style="left: 210px; top: 180px; width: 50px;">
+
+<!-- Estado Civil -->
+<input type="radio" name="estado_civil" style="left: 155px; top: 208px;"> <!-- Solteiro -->
+<input type="radio" name="estado_civil" style="left: 255px; top: 208px;"> <!-- Casado -->
+<input type="radio" name="estado_civil" style="left: 345px; top: 208px;"> <!-- Divorciado -->
+<input type="radio" name="estado_civil" style="left: 460px; top: 208px;"> <!-- Viúvo -->
+
+<!-- Aposentado por invalidez -->
+<input type="radio" name="aposentado" style="left: 240px; top: 240px;"> <!-- Sim -->
+<input type="radio" name="aposentado" style="left: 320px; top: 240px;"> <!-- Não -->
+
+<!-- Comum Congregação -->
+<input type="text" style="left: 210px; top: 270px; width: 620px;">
+
+<!-- Cargo que já exerce -->
+<input type="text" style="left: 290px; top: 298px; width: 540px;">
+
+<!-- Cônjuge exerce algum cargo -->
+<input type="radio" name="conjuge" style="left: 380px; top: 330px;"> <!-- Sim -->
+<input type="radio" name="conjuge" style="left: 460px; top: 330px;"> <!-- Não -->
+
+<!-- Apresentado por - Assinaturas -->
+<div style="position: absolute; left: 130px; top: 370px;">
+    <canvas id="sigAnciao" class="signature-canvas" width="200" height="40"></canvas>
+    <button class="clear-button" style="top: -20px; left: 0;" data-canvas="sigAnciao">Limpar</button>
+</div>
+
+<div style="position: absolute; left: 395px; top: 370px;">
+    <canvas id="sigDiacono" class="signature-canvas" width="200" height="40"></canvas>
+    <button class="clear-button" style="top: -20px; left: 0;" data-canvas="sigDiacono">Limpar</button>
+</div>
+
+<div style="position: absolute; left: 640px; top: 370px;">
+    <canvas id="sigCooperador" class="signature-canvas" width="200" height="40"></canvas>
+    <button class="clear-button" style="top: -20px; left: 0;" data-canvas="sigCooperador">Limpar</button>
+</div>
+
     </div>
 
     <button id="print-button" class="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-lg">
